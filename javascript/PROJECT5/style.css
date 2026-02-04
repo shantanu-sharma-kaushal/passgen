@@ -1,0 +1,136 @@
+:root{
+  font-size: 100%;
+  --primary: #667eea;
+  --text-dark: #222;
+  --text-muted: #555;
+  --card-bg: #ffffff;
+}
+
+/* Reset */
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  min-height: 100vh;
+  font-family: system-ui, sans-serif;
+  color: var(--text-dark);
+}
+
+/* 🔍 Search */
+#search-section{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 3rem auto;
+  width: 90%;
+  max-width: 50rem;
+}
+
+#user-input{
+  width: 65%;
+  padding: 0.75em;
+  font-size: 1rem;
+  border-radius: 0.5em;
+  border: 0.1em solid #ccc;
+}
+
+#user-input:focus{
+  outline: 0.2em solid var(--primary);
+}
+
+#search-btn{
+  padding: 0.75em 1.5em;
+  font-size: 1rem;
+  border-radius: 0.5em;
+  border: none;
+  cursor: pointer;
+}
+
+/* 🧩 Cards Container */
+#cards-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 90%;
+  max-width: 70rem;
+  margin: auto;
+}
+
+/* 💳 Card */
+.user-card{
+  width: 100%;
+  max-width: 22rem;
+  background: var(--card-bg);
+  border-radius: 1em;
+  padding: 1.5em;
+  box-shadow: 0 0.8em 1.8em rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.user-card:hover{
+  transform: translateY(-0.4em);
+}
+
+/* 🖼 Image section */
+.pics{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8em;
+}
+
+/* small user image */
+.user-image{
+  width: 18%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 0.15em solid var(--primary);
+}
+
+/* main product image */
+.product-image{
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
+  border-radius: 0.8em;
+}
+
+/* 📝 Text */
+.text{
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+}
+
+.user-name{
+  font-size: 1rem;
+}
+
+.user-desc{
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* ♿ Reduced motion */
+@media (prefers-reduced-motion: reduce){
+  *{
+    transition: none !important;
+  }
+}
+
+/* 📱 Mobile */
+@media (max-width: 40em){
+  #search-section{
+    flex-direction: column;
+  }
+
+  #user-input{
+    width: 100%;
+  }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>User Image Fetch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Search Section -->
+  <section id="search-section" aria-label="User search">
+    <input
+      type="text"
+      id="user-input"
+      placeholder="Enter username"
+      aria-label="Username"
+    >
+    <button id="search-btn">Search</button>
+  </section>
+
+  <!-- Cards Container -->
+  <section id="cards-container" aria-label="Cards list">
+
+    <!-- Card -->
+    <article class="user-card">
+
+      <div class="pics">
+        <!-- small user image -->
+        <img
+          class="user-image"
+          src="https://via.placeholder.com/150"
+          alt="User profile image"
+        >
+
+        <!-- main product image -->
+        <img
+          class="product-image"
+          src="https://via.placeholder.com/400x300"
+          alt="Main product image"
+        >
+      </div>
+
+      <div class="text">
+        <h3 class="user-name">User Name</h3>
+        <p class="user-desc">
+          This is a short user description. Main focus product image par hai.
+        </p>
+      </div>
+
+    </article>
+
+    <!-- Card -->
+    <article class="user-card">
+      <div class="pics">
+        <img class="user-image" src="https://via.placeholder.com/150" alt="User profile image">
+        <img class="product-image" src="https://via.placeholder.com/400x300" alt="Main product image">
+      </div>
+      <div class="text">
+        <h3 class="user-name">User Name</h3>
+        <p class="user-desc">This is a short user description.</p>
+      </div>
+    </article>
+
+    <!-- Card -->
+    <article class="user-card">
+      <div class="pics">
+        <img class="user-image" src="https://via.placeholder.com/150" alt="User profile image">
+        <img class="product-image" src="https://via.placeholder.com/400x300" alt="Main product image">
+      </div>
+      <div class="text">
+        <h3 class="user-name">User Name</h3>
+        <p class="user-desc">This is a short user description.</p>
+      </div>
+    </article>
+
+  </section>
+  <script src="mainscript.js"></script>
+
+</body>
+</html>
