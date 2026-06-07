@@ -1,0 +1,163 @@
+const wrapper = document.getElementById("wrapper");
+const matcher1 = document.getElementById("matcher1");
+const matcher2 = document.getElementById("matcher2");
+const matcher3 = document.getElementById("matcher3");
+const matcher4 = document.getElementById("matcher4");
+const card1 = document.getElementById("card1"); 
+const card2 = document.getElementById("card2");
+const card3 = document.getElementById("card3");
+const card4 = document.getElementById("card4"); 
+const card5 = document.getElementById("card5");
+const card6 = document.getElementById("card6");
+const card7 = document.getElementById("card7");
+const card8 = document.getElementById("card8");
+let flag=0;
+card1.addEventListener("click",()=>{
+  let text1 = card1text.innerText;
+  console.log(text1);
+  if (flag==0)
+  {
+  sessionStorage.setItem("1",text1); //key must be string
+  //ye sessionStorage me card1 ka text store kre ga
+   //ye sessionStorage me card1 ka id store kre ga
+  // ye hi synrax sessionStorage.setItem("key","value") localStorage ke liye bhi hoga,
+  console.log(sessionStorage.getItem("1"));
+  flag=1;
+  }
+  else{
+    sessionStorage.setItem("2",text1); 
+  console.log(sessionStorage.getItem("2"));
+  flag=0;
+  }
+  matchcheck();
+});
+card2.addEventListener("click",()=>{
+  let text2 = card2text.innerText;
+  console.log(text2);
+   if (flag==0)
+  {
+  sessionStorage.setItem("1",text2); 
+  console.log(sessionStorage.getItem("1"));
+  flag=1;
+  }
+  else{
+    sessionStorage.setItem("2",text2); 
+  console.log(sessionStorage.getItem("2"));
+  flag=0;
+  }
+  matchcheck();
+});
+card3.addEventListener("click",()=>{
+  let text3 = card3text.innerText;
+  console.log(text3);
+ if (flag==0)
+  {
+  sessionStorage.setItem("1",text3); 
+  console.log(sessionStorage.getItem("1"));
+  flag=1;
+  }
+  else{
+    sessionStorage.setItem("2",text3); 
+  console.log(sessionStorage.getItem("2"));
+  flag=0;
+  }
+  matchcheck();
+});
+card4.addEventListener("click",()=>{
+  let text4 = card4text.innerText;
+  console.log(text4);
+   if (flag==0)
+  {
+  sessionStorage.setItem("1",text4); 
+  console.log(sessionStorage.getItem("1"));
+  flag=1;
+  }
+  else{
+    sessionStorage.setItem("2",text4); 
+  console.log(sessionStorage.getItem("2"));
+  flag=0;
+  }
+});
+card5.addEventListener("click",()=>{
+  let text5 = card5text.innerText;
+  console.log(text5);
+  if (flag==0)
+  {
+  sessionStorage.setItem("1",text5); 
+  console.log(sessionStorage.getItem("1"));
+  flag=1;
+  }
+  else{
+    sessionStorage.setItem("2",text5); 
+  console.log(sessionStorage.getItem("2"));
+  flag=0;
+  }
+  matchcheck();
+});
+card6.addEventListener("click",()=>{
+  let text6 = card6text.innerText;
+  console.log(text6);
+    if (flag==0)
+  {
+  sessionStorage.setItem("1",text6); 
+  console.log(sessionStorage.getItem("1"));
+  flag=1;
+  }
+  else{
+    sessionStorage.setItem("2",text6); 
+  console.log(sessionStorage.getItem("2"));
+  flag=0;
+  }
+  matchcheck();
+});
+card7.addEventListener("click",()=>{
+  let text7 = card7text.innerText;
+  console.log(text7);
+    if (flag==0)
+  {
+  sessionStorage.setItem("1",text7); 
+  console.log(sessionStorage.getItem("1"));
+  flag=1;
+  }
+  else{
+    sessionStorage.setItem("2",text7); 
+  console.log(sessionStorage.getItem("2"));
+  flag=0;
+  }
+  matchcheck();
+});
+card8.addEventListener("click",()=>{
+  let text8 = card8text.innerText;
+  console.log(text8);
+    if (flag==0)
+  {
+  sessionStorage.setItem("1",text8); 
+  console.log(sessionStorage.getItem("1"));
+  flag=1;
+  }
+  else{
+    sessionStorage.setItem("2",text8); 
+  console.log(sessionStorage.getItem("2"));
+  flag=0;
+  }
+  matchcheck();
+});
+
+const matchcheck=()=>{
+  let data1 = sessionStorage.getItem("1")
+  let data2 = sessionStorage.getItem("2")
+  if(data1 && data2)
+  {
+    console.log("control");
+  if(data1===data2){
+    console.log("matched");
+    sessionStorage.clear();
+  }
+   else{
+     sessionStorage.clear();
+    }
+  }
+  else{
+    console.log("click on second card");
+  }
+}
