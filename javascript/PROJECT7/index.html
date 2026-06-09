@@ -1,23 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Hub</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header">
-        welcome to games
+       <div class="hero">
+        <h1>SK Presents</h1>
+        <p>Click on the game you want to play</p>
     </div>
-    <nav>
-        <!-- Navigation content -->
-         <div id="TTT" > 
-          <a href="components/ttt.html">Tic Tac Toe</a></div>
-         <div id="quick"><a href="components/quick.html">Quick matcher</a></div>
-         <div id="math"><a href="components/math.html">Math Master</a></div>
-          <div id="snake"><a href="components/ snake.html">Snake Game</a></div>
-    </nav>
-    
+    <div class="container">
+
+        <div class="card">
+            <img src="/PROJECT7/pics/ttt.png" alt="Tic Tac Toe">
+
+            <h2>Tic Tac Toe</h2>
+
+            <a href="/PROJECT7/components/ttt.html" class="play-btn">
+                Play Now
+            </a>
+        </div>
+
+        <div class="card">
+            <img src="/PROJECT7/pics/qm.png" alt="Quiz Master">
+
+            <h2>Quiz Master</h2>
+
+            <a href="/PROJECT7/components/qm.html" class="play-btn">
+                Play Now
+            </a>
+        </div>
+
+        <div class="card">
+            <img src="/PROJECT7/pics/sl.png" alt="Snake & Ladder">
+
+            <h2>Snake & Ladder</h2>
+
+            <a href="/PROJECT7/components/SL.html" class="play-btn">
+                Play Now
+            </a>
+        </div>
+
+    </div>
+
 </body>
 </html>
